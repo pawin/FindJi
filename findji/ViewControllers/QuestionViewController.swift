@@ -49,14 +49,14 @@ extension QuestionViewController: NSTouchBarDelegate {
         let touchBar = NSTouchBar()
         touchBar.delegate = self
         touchBar.customizationIdentifier = NSTouchBarCustomizationIdentifier("me.pawin.findji")
-        touchBar.defaultItemIdentifiers = [NSTouchBarItemIdentifier("emj")]
-        touchBar.customizationAllowedItemIdentifiers = [NSTouchBarItemIdentifier("emj")]
+        touchBar.defaultItemIdentifiers = [NSTouchBarItemIdentifier("findji")]
+        touchBar.customizationAllowedItemIdentifiers = [NSTouchBarItemIdentifier("findji")]
         return touchBar
     }
     
     func touchBar(_ touchBar: NSTouchBar, makeItemForIdentifier identifier: NSTouchBarItemIdentifier) -> NSTouchBarItem? {
         switch identifier {
-        case NSTouchBarItemIdentifier("emj"):
+        case NSTouchBarItemIdentifier("findji"):
             
             let viewItem = NSCustomTouchBarItem(identifier: identifier)
             viewItem.view = createButtonsView()
