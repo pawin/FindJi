@@ -1,0 +1,416 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		23743ABB1DEA0B23008E3337 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23743ABA1DEA0B23008E3337 /* AppDelegate.swift */; };
+		23743ABD1DEA0B23008E3337 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23743ABC1DEA0B23008E3337 /* ViewController.swift */; };
+		23743ABF1DEA0B23008E3337 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23743ABE1DEA0B23008E3337 /* Assets.xcassets */; };
+		23743AC21DEA0B23008E3337 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23743AC01DEA0B23008E3337 /* Main.storyboard */; };
+		23743ACD1DEA0B23008E3337 /* findjiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23743ACC1DEA0B23008E3337 /* findjiTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		23743AC91DEA0B23008E3337 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23743AAF1DEA0B23008E3337 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23743AB61DEA0B23008E3337;
+			remoteInfo = findji;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		23743AB71DEA0B23008E3337 /* findji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = findji.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		23743ABA1DEA0B23008E3337 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		23743ABC1DEA0B23008E3337 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		23743ABE1DEA0B23008E3337 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		23743AC11DEA0B23008E3337 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		23743AC31DEA0B23008E3337 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23743AC81DEA0B23008E3337 /* findjiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = findjiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		23743ACC1DEA0B23008E3337 /* findjiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = findjiTests.swift; sourceTree = "<group>"; };
+		23743ACE1DEA0B23008E3337 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		23743AB41DEA0B23008E3337 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23743AC51DEA0B23008E3337 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		23743AAE1DEA0B23008E3337 = {
+			isa = PBXGroup;
+			children = (
+				23743AB91DEA0B23008E3337 /* findji */,
+				23743ACB1DEA0B23008E3337 /* findjiTests */,
+				23743AB81DEA0B23008E3337 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		23743AB81DEA0B23008E3337 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23743AB71DEA0B23008E3337 /* findji.app */,
+				23743AC81DEA0B23008E3337 /* findjiTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		23743AB91DEA0B23008E3337 /* findji */ = {
+			isa = PBXGroup;
+			children = (
+				23743ABA1DEA0B23008E3337 /* AppDelegate.swift */,
+				23743ABC1DEA0B23008E3337 /* ViewController.swift */,
+				23743ABE1DEA0B23008E3337 /* Assets.xcassets */,
+				23743AC01DEA0B23008E3337 /* Main.storyboard */,
+				23743AC31DEA0B23008E3337 /* Info.plist */,
+			);
+			path = findji;
+			sourceTree = "<group>";
+		};
+		23743ACB1DEA0B23008E3337 /* findjiTests */ = {
+			isa = PBXGroup;
+			children = (
+				23743ACC1DEA0B23008E3337 /* findjiTests.swift */,
+				23743ACE1DEA0B23008E3337 /* Info.plist */,
+			);
+			path = findjiTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		23743AB61DEA0B23008E3337 /* findji */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23743AD11DEA0B23008E3337 /* Build configuration list for PBXNativeTarget "findji" */;
+			buildPhases = (
+				23743AB31DEA0B23008E3337 /* Sources */,
+				23743AB41DEA0B23008E3337 /* Frameworks */,
+				23743AB51DEA0B23008E3337 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = findji;
+			productName = findji;
+			productReference = 23743AB71DEA0B23008E3337 /* findji.app */;
+			productType = "com.apple.product-type.application";
+		};
+		23743AC71DEA0B23008E3337 /* findjiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23743AD41DEA0B23008E3337 /* Build configuration list for PBXNativeTarget "findjiTests" */;
+			buildPhases = (
+				23743AC41DEA0B23008E3337 /* Sources */,
+				23743AC51DEA0B23008E3337 /* Frameworks */,
+				23743AC61DEA0B23008E3337 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23743ACA1DEA0B23008E3337 /* PBXTargetDependency */,
+			);
+			name = findjiTests;
+			productName = findjiTests;
+			productReference = 23743AC81DEA0B23008E3337 /* findjiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		23743AAF1DEA0B23008E3337 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Pawin Thepbanchaporn";
+				TargetAttributes = {
+					23743AB61DEA0B23008E3337 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = NZ8W34AETZ;
+						ProvisioningStyle = Automatic;
+					};
+					23743AC71DEA0B23008E3337 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = NZ8W34AETZ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 23743AB61DEA0B23008E3337;
+					};
+				};
+			};
+			buildConfigurationList = 23743AB21DEA0B23008E3337 /* Build configuration list for PBXProject "findji" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 23743AAE1DEA0B23008E3337;
+			productRefGroup = 23743AB81DEA0B23008E3337 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				23743AB61DEA0B23008E3337 /* findji */,
+				23743AC71DEA0B23008E3337 /* findjiTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		23743AB51DEA0B23008E3337 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23743ABF1DEA0B23008E3337 /* Assets.xcassets in Resources */,
+				23743AC21DEA0B23008E3337 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23743AC61DEA0B23008E3337 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		23743AB31DEA0B23008E3337 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23743ABD1DEA0B23008E3337 /* ViewController.swift in Sources */,
+				23743ABB1DEA0B23008E3337 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23743AC41DEA0B23008E3337 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23743ACD1DEA0B23008E3337 /* findjiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		23743ACA1DEA0B23008E3337 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23743AB61DEA0B23008E3337 /* findji */;
+			targetProxy = 23743AC91DEA0B23008E3337 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		23743AC01DEA0B23008E3337 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23743AC11DEA0B23008E3337 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		23743ACF1DEA0B23008E3337 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		23743AD01DEA0B23008E3337 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		23743AD21DEA0B23008E3337 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = NZ8W34AETZ;
+				INFOPLIST_FILE = findji/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.pawin.findji;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		23743AD31DEA0B23008E3337 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = NZ8W34AETZ;
+				INFOPLIST_FILE = findji/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.pawin.findji;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		23743AD51DEA0B23008E3337 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = NZ8W34AETZ;
+				INFOPLIST_FILE = findjiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.pawin.findjiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/findji.app/Contents/MacOS/findji";
+			};
+			name = Debug;
+		};
+		23743AD61DEA0B23008E3337 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = NZ8W34AETZ;
+				INFOPLIST_FILE = findjiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.pawin.findjiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/findji.app/Contents/MacOS/findji";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		23743AB21DEA0B23008E3337 /* Build configuration list for PBXProject "findji" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23743ACF1DEA0B23008E3337 /* Debug */,
+				23743AD01DEA0B23008E3337 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23743AD11DEA0B23008E3337 /* Build configuration list for PBXNativeTarget "findji" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23743AD21DEA0B23008E3337 /* Debug */,
+				23743AD31DEA0B23008E3337 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		23743AD41DEA0B23008E3337 /* Build configuration list for PBXNativeTarget "findjiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23743AD51DEA0B23008E3337 /* Debug */,
+				23743AD61DEA0B23008E3337 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 23743AAF1DEA0B23008E3337 /* Project object */;
+}
