@@ -12,6 +12,10 @@
 		23743ABF1DEA0B23008E3337 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23743ABE1DEA0B23008E3337 /* Assets.xcassets */; };
 		23743AC21DEA0B23008E3337 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23743AC01DEA0B23008E3337 /* Main.storyboard */; };
 		23743ACD1DEA0B23008E3337 /* findjiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23743ACC1DEA0B23008E3337 /* findjiTests.swift */; };
+		23743AD91DEA0B5E008E3337 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23743AD81DEA0B5E008E3337 /* Question.swift */; };
+		23743ADB1DEA0C60008E3337 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23743ADA1DEA0C60008E3337 /* QuestionViewController.swift */; };
+		23743ADE1DEA16BD008E3337 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23743ADC1DEA16BD008E3337 /* Array.swift */; };
+		23743ADF1DEA16BD008E3337 /* Array.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23743ADD1DEA16BD008E3337 /* Array.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,10 @@
 		23743AC81DEA0B23008E3337 /* findjiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = findjiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		23743ACC1DEA0B23008E3337 /* findjiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = findjiTests.swift; sourceTree = "<group>"; };
 		23743ACE1DEA0B23008E3337 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23743AD81DEA0B5E008E3337 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Question.swift; path = Models/Question.swift; sourceTree = "<group>"; };
+		23743ADA1DEA0C60008E3337 /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuestionViewController.swift; path = ViewControllers/QuestionViewController.swift; sourceTree = "<group>"; };
+		23743ADC1DEA16BD008E3337 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Array.swift; path = Extensions/Array.swift; sourceTree = "<group>"; };
+		23743ADD1DEA16BD008E3337 /* Array.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Array.xib; path = Extensions/Array.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,11 +83,15 @@
 		23743AB91DEA0B23008E3337 /* findji */ = {
 			isa = PBXGroup;
 			children = (
+				23743AD71DEA0B3E008E3337 /* Models */,
 				23743ABA1DEA0B23008E3337 /* AppDelegate.swift */,
 				23743ABC1DEA0B23008E3337 /* ViewController.swift */,
+				23743ADA1DEA0C60008E3337 /* QuestionViewController.swift */,
 				23743ABE1DEA0B23008E3337 /* Assets.xcassets */,
 				23743AC01DEA0B23008E3337 /* Main.storyboard */,
 				23743AC31DEA0B23008E3337 /* Info.plist */,
+				23743ADC1DEA16BD008E3337 /* Array.swift */,
+				23743ADD1DEA16BD008E3337 /* Array.xib */,
 			);
 			path = findji;
 			sourceTree = "<group>";
@@ -91,6 +103,14 @@
 				23743ACE1DEA0B23008E3337 /* Info.plist */,
 			);
 			path = findjiTests;
+			sourceTree = "<group>";
+		};
+		23743AD71DEA0B3E008E3337 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				23743AD81DEA0B5E008E3337 /* Question.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +200,7 @@
 			files = (
 				23743ABF1DEA0B23008E3337 /* Assets.xcassets in Resources */,
 				23743AC21DEA0B23008E3337 /* Main.storyboard in Resources */,
+				23743ADF1DEA16BD008E3337 /* Array.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +218,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23743AD91DEA0B5E008E3337 /* Question.swift in Sources */,
+				23743ADE1DEA16BD008E3337 /* Array.swift in Sources */,
 				23743ABD1DEA0B23008E3337 /* ViewController.swift in Sources */,
+				23743ADB1DEA0C60008E3337 /* QuestionViewController.swift in Sources */,
 				23743ABB1DEA0B23008E3337 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
