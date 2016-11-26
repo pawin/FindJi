@@ -9,7 +9,6 @@
 import Foundation
 
 enum QuestionType: Int {
-    case random         = 0
     case smiley         = 1
     case gesture        = 2
     case face           = 3
@@ -30,11 +29,6 @@ enum QuestionType: Int {
     
     private var characters: String {
         switch self {
-        case .random:
-            let randomNumber = Int(arc4random_uniform(UInt32(17))) + 1
-            NSLog(">>\(randomNumber)")
-            let type = QuestionType(rawValue: randomNumber) ?? QuestionType(rawValue: 1)!
-            return type.characters
         case .smiley:
             return "😀😬😁😂😃😄😅😆😇😉😊🙂🙃☺️😋😌😍😘😗😙😚😜😝😛🤑🤓😎🤗😏😶😐😑😒🙄🤔😳😞😟😠😡😔😕🙁☹️😣😖😫😩😤😮😱😨😰😯😦😧😢😥😪😓😭😵😲🤐😷🤒🤕😴"
         case .gesture:
@@ -62,7 +56,7 @@ enum QuestionType: Int {
         case .purpleSign:
             return "☮️✝️☪️🕉☸️✡️🔯🕎☯️☦️🛐⛎♈️♉️♊️♋️♌️♍️♎️♏️♐️♑️♒️♓️🆔⚛️"
         case .orangeSign:
-            return "☢️☣️📴📳🈶🈚️🈸🈺🈷✴️🆚"
+            return "☢️☣️📴📳🈶🈚️🈸🈺✴️🆚"//🈷
         case .greySign:
             return "🚻🚮🎦📶🈁🔤🔡🔠🔣ℹ️🆖🆗🆙🆒🆕🆓🔢#️⃣*️⃣▶️⏺⏹⏪⏫⏬◀️🔼⏩⏯⬇️⬆️⬅️➡️🔽↗️↘️↙️↖️↕️↔️🔀🔁↪️↩️🔂🔄⤴️⤵️"
         case .clock:
@@ -99,6 +93,12 @@ struct Question {
     init(_ questionType: QuestionType) {
         self.type = questionType
         self.choices = questionType.randomChoices
-        self.answer = questionType.randomChoices[questionType.answerIndex]
+        self.answer = self.choices[questionType.answerIndex]
+    }
+    
+    static func random() -> Question {
+        let randomNumber = Int(arc4random_uniform(UInt32(17))) + 1
+        let type = QuestionType(rawValue: randomNumber) ?? QuestionType(rawValue: 1)!
+        return Question(type)
     }
 }

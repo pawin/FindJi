@@ -713,7 +713,7 @@
         <scene sceneID="szg-WD-KhB">
             <objects>
                 <viewController id="pKG-PY-Lgi" customClass="QuestionViewController" customModule="findji" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="XfD-gh-2ic">
+                    <view key="view" misplaced="YES" id="XfD-gh-2ic">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
@@ -735,16 +735,21 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hgr-ov-c6L">
-                                <rect key="frame" x="207" y="150" width="37" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="Mge-UA-c8l">
-                                    <font key="font" metaFont="system"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hgr-ov-c6L">
+                                <rect key="frame" x="-2" y="0.0" width="454" height="72"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="0" id="Mge-UA-c8l">
+                                    <font key="font" metaFont="system" size="60"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="hgr-ov-c6L" firstAttribute="top" secondItem="XfD-gh-2ic" secondAttribute="top" id="2kg-Lb-QfR"/>
+                            <constraint firstAttribute="trailing" secondItem="hgr-ov-c6L" secondAttribute="trailing" id="7ZJ-Gf-Ofn"/>
+                            <constraint firstAttribute="bottom" secondItem="hgr-ov-c6L" secondAttribute="bottom" id="BKc-GX-ZcS"/>
+                            <constraint firstItem="hgr-ov-c6L" firstAttribute="leading" secondItem="XfD-gh-2ic" secondAttribute="leading" id="hfZ-JU-uVR"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="answerTextField" destination="hgr-ov-c6L" id="rBr-LP-Kzl"/>

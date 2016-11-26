@@ -29,8 +29,13 @@ class QuestionViewController: NSViewController {
     
     func createQuestion() {
         if #available(OSX 10.12.1, *) {
-            question = Question(QuestionType.random)
+
+            question = Question.random()
+            
+            answerTextField.stringValue = question?.answer ?? ""
+        
             touchBar = makeTouchBar()
+            
         } else {
             // Fallback on earlier versions
         }
@@ -38,6 +43,13 @@ class QuestionViewController: NSViewController {
     
     func answer(_ button: NSButton) {
         NSLog("answer: \(button.title)")
+        
+        if button.title == question?.answer {
+            NSLog("✅")
+        }
+        else {
+            NSLog("❌")
+        }
         
         createQuestion()
     }
