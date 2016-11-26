@@ -717,8 +717,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gId-QX-plP">
+                                <rect key="frame" x="18" y="263" width="31" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="time" id="tle-bS-3DV">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="neq-3Q-vlO">
+                                <rect key="frame" x="394" y="263" width="38" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="score" id="zjl-HC-KRX">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hgr-ov-c6L">
-                                <rect key="frame" x="207" y="206" width="37" height="37"/>
+                                <rect key="frame" x="207" y="150" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="Mge-UA-c8l">
                                     <font key="font" metaFont="system"/>
@@ -728,6 +746,11 @@
                             </textField>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="answerTextField" destination="hgr-ov-c6L" id="rBr-LP-Kzl"/>
+                        <outlet property="scoreTextField" destination="neq-3Q-vlO" id="KWd-QV-fiQ"/>
+                        <outlet property="timeTextField" destination="gId-QX-plP" id="9L5-vb-7o7"/>
+                    </connections>
                 </viewController>
                 <customObject id="vZ5-jJ-hpg" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

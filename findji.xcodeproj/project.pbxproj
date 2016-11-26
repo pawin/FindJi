@@ -16,6 +16,7 @@
 		23743ADB1DEA0C60008E3337 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23743ADA1DEA0C60008E3337 /* QuestionViewController.swift */; };
 		23743ADE1DEA16BD008E3337 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23743ADC1DEA16BD008E3337 /* Array.swift */; };
 		23743ADF1DEA16BD008E3337 /* Array.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23743ADD1DEA16BD008E3337 /* Array.xib */; };
+		23743AE21DEA1F0F008E3337 /* QuestionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23743AE11DEA1F0F008E3337 /* QuestionType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		23743ADA1DEA0C60008E3337 /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuestionViewController.swift; path = ViewControllers/QuestionViewController.swift; sourceTree = "<group>"; };
 		23743ADC1DEA16BD008E3337 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Array.swift; path = Extensions/Array.swift; sourceTree = "<group>"; };
 		23743ADD1DEA16BD008E3337 /* Array.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Array.xib; path = Extensions/Array.xib; sourceTree = "<group>"; };
+		23743AE11DEA1F0F008E3337 /* QuestionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuestionType.swift; path = Models/QuestionType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		23743AB91DEA0B23008E3337 /* findji */ = {
 			isa = PBXGroup;
 			children = (
+				23743AE01DEA1E9C008E3337 /* Extensions */,
 				23743AD71DEA0B3E008E3337 /* Models */,
 				23743ABA1DEA0B23008E3337 /* AppDelegate.swift */,
 				23743ABC1DEA0B23008E3337 /* ViewController.swift */,
@@ -90,7 +93,6 @@
 				23743ABE1DEA0B23008E3337 /* Assets.xcassets */,
 				23743AC01DEA0B23008E3337 /* Main.storyboard */,
 				23743AC31DEA0B23008E3337 /* Info.plist */,
-				23743ADC1DEA16BD008E3337 /* Array.swift */,
 				23743ADD1DEA16BD008E3337 /* Array.xib */,
 			);
 			path = findji;
@@ -109,8 +111,17 @@
 			isa = PBXGroup;
 			children = (
 				23743AD81DEA0B5E008E3337 /* Question.swift */,
+				23743AE11DEA1F0F008E3337 /* QuestionType.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		23743AE01DEA1E9C008E3337 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				23743ADC1DEA16BD008E3337 /* Array.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23743AD91DEA0B5E008E3337 /* Question.swift in Sources */,
+				23743AE21DEA1F0F008E3337 /* QuestionType.swift in Sources */,
 				23743ADE1DEA16BD008E3337 /* Array.swift in Sources */,
 				23743ABD1DEA0B23008E3337 /* ViewController.swift in Sources */,
 				23743ADB1DEA0C60008E3337 /* QuestionViewController.swift in Sources */,
