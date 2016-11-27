@@ -65,6 +65,7 @@ class QuestionViewController: NSViewController {
         score = 0
         time = 60
         
+        timer?.invalidate()
         timer = Timer.scheduledTimer(timeInterval: 1,
                                      target: self,
                                      selector: #selector(QuestionViewController.updateTime),
@@ -74,6 +75,8 @@ class QuestionViewController: NSViewController {
     
     func stopGame() {
         timer?.invalidate()
+        
+        removeAllButtons()
     }
     
     func updateTime() {
@@ -91,15 +94,9 @@ class QuestionViewController: NSViewController {
             
             answerTextField.stringValue = question?.answer ?? ""
             
-            stackView.subviews.forEach({ [weak self] (view) in
-                self?.stackView.removeArrangedSubview(view)
-                view.removeFromSuperview()
-            })
+            removeAllButtons()
             
-            question?.choices.forEach({ [weak self] (choice) in
-                let button = NSButton(title: choice, target: self, action: #selector(QuestionViewController.answer))
-                self?.stackView.addArrangedSubview(button)
-            })
+            displayButtons()
             
         } else {
             // Fallback on earlier versions
@@ -118,6 +115,22 @@ class QuestionViewController: NSViewController {
         }
         
         createQuestion()
+    }
+}
+
+extension QuestionViewController {
+    func removeAllButtons() {
+        stackView.subviews.forEach({ [weak self] (view) in
+            self?.stackView.removeArrangedSubview(view)
+            view.removeFromSuperview()
+        })
+    }
+    
+    func displayButtons() {
+        question?.choices.forEach({ [weak self] (choice) in
+            let button = NSButton(title: choice, target: self, action: #selector(QuestionViewController.answer))
+            self?.stackView.addArrangedSubview(button)
+        })
     }
 }
 
