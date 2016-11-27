@@ -77,12 +77,6 @@ enum QuestionType: Int {
         let shuffled = array.shuffled
         return Array(shuffled.prefix(8))
     }
-    
-    var answerIndex: Int {
-        let choices = randomChoices
-        let randomIndex = Int(arc4random_uniform(UInt32(choices.count)))
-        return randomIndex
-    }
 }
 
 struct Question {
@@ -93,7 +87,7 @@ struct Question {
     init(_ questionType: QuestionType) {
         self.type = questionType
         self.choices = questionType.randomChoices
-        self.answer = self.choices[questionType.answerIndex]
+        self.answer = self.choices.chooseOne
     }
     
     static func random() -> Question {

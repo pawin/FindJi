@@ -19,12 +19,30 @@ class QuestionViewController: NSViewController {
     let failJis = ["👎","😡","👿","💩"]
     
     var question: Question?
+    var score: Int = 0 {
+        didSet {
+            let string = "\(score)"
+            scoreTextField.stringValue = string.numberEmoji
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
         
+        configureViews()
+        
+        startGame()
+        
         createQuestion()
+    }
+    
+    private func configureViews() {
+
+    }
+    
+    func startGame() {
+        score = 0
     }
     
     func createQuestion() {
@@ -46,6 +64,7 @@ class QuestionViewController: NSViewController {
         
         if button.title == question?.answer {
             NSLog("✅")
+            score += 1
         }
         else {
             NSLog("❌")

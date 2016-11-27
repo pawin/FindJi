@@ -17,6 +17,7 @@
 		23743ADE1DEA16BD008E3337 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23743ADC1DEA16BD008E3337 /* Array.swift */; };
 		23743ADF1DEA16BD008E3337 /* Array.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23743ADD1DEA16BD008E3337 /* Array.xib */; };
 		23743AE21DEA1F0F008E3337 /* QuestionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23743AE11DEA1F0F008E3337 /* QuestionType.swift */; };
+		23A403AA1DEA7E55002C2B58 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A403A91DEA7E55002C2B58 /* String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		23743ADC1DEA16BD008E3337 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Array.swift; path = Extensions/Array.swift; sourceTree = "<group>"; };
 		23743ADD1DEA16BD008E3337 /* Array.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Array.xib; path = Extensions/Array.xib; sourceTree = "<group>"; };
 		23743AE11DEA1F0F008E3337 /* QuestionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuestionType.swift; path = Models/QuestionType.swift; sourceTree = "<group>"; };
+		23A403A91DEA7E55002C2B58 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				23743ADC1DEA16BD008E3337 /* Array.swift */,
+				23A403A91DEA7E55002C2B58 /* String.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				23743AE21DEA1F0F008E3337 /* QuestionType.swift in Sources */,
 				23743ADE1DEA16BD008E3337 /* Array.swift in Sources */,
 				23743ABD1DEA0B23008E3337 /* ViewController.swift in Sources */,
+				23A403AA1DEA7E55002C2B58 /* String.swift in Sources */,
 				23743ADB1DEA0C60008E3337 /* QuestionViewController.swift in Sources */,
 				23743ABB1DEA0B23008E3337 /* AppDelegate.swift in Sources */,
 			);
@@ -437,6 +441,7 @@
 				23743AD31DEA0B23008E3337 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		23743AD41DEA0B23008E3337 /* Build configuration list for PBXNativeTarget "findjiTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +450,7 @@
 				23743AD61DEA0B23008E3337 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

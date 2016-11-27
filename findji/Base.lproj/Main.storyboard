@@ -717,38 +717,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gId-QX-plP">
-                                <rect key="frame" x="18" y="263" width="31" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="time" id="tle-bS-3DV">
-                                    <font key="font" metaFont="system"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gId-QX-plP">
+                                <rect key="frame" x="-2" y="234" width="166" height="72"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="00:00" id="tle-bS-3DV">
+                                    <font key="font" metaFont="system" size="60"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="neq-3Q-vlO">
-                                <rect key="frame" x="394" y="263" width="38" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="score" id="zjl-HC-KRX">
-                                    <font key="font" metaFont="system"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="neq-3Q-vlO">
+                                <rect key="frame" x="411" y="234" width="41" height="72"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="0" id="zjl-HC-KRX">
+                                    <font key="font" metaFont="system" size="60"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hgr-ov-c6L">
-                                <rect key="frame" x="-2" y="0.0" width="454" height="72"/>
+                                <rect key="frame" x="-2" y="40" width="454" height="166"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="0" id="Mge-UA-c8l">
-                                    <font key="font" metaFont="system" size="60"/>
+                                    <font key="font" metaFont="system" size="140"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="hgr-ov-c6L" firstAttribute="top" secondItem="XfD-gh-2ic" secondAttribute="top" id="2kg-Lb-QfR"/>
+                            <constraint firstItem="gId-QX-plP" firstAttribute="top" secondItem="XfD-gh-2ic" secondAttribute="top" id="2SY-Ry-hpt"/>
+                            <constraint firstItem="hgr-ov-c6L" firstAttribute="top" secondItem="XfD-gh-2ic" secondAttribute="top" constant="100" id="2kg-Lb-QfR"/>
                             <constraint firstAttribute="trailing" secondItem="hgr-ov-c6L" secondAttribute="trailing" id="7ZJ-Gf-Ofn"/>
-                            <constraint firstAttribute="bottom" secondItem="hgr-ov-c6L" secondAttribute="bottom" id="BKc-GX-ZcS"/>
+                            <constraint firstItem="neq-3Q-vlO" firstAttribute="top" secondItem="XfD-gh-2ic" secondAttribute="top" id="93W-px-rTN"/>
+                            <constraint firstAttribute="bottom" secondItem="hgr-ov-c6L" secondAttribute="bottom" constant="40" id="BKc-GX-ZcS"/>
+                            <constraint firstItem="gId-QX-plP" firstAttribute="leading" secondItem="XfD-gh-2ic" secondAttribute="leading" id="Zcf-U5-zhh"/>
                             <constraint firstItem="hgr-ov-c6L" firstAttribute="leading" secondItem="XfD-gh-2ic" secondAttribute="leading" id="hfZ-JU-uVR"/>
+                            <constraint firstAttribute="trailing" secondItem="neq-3Q-vlO" secondAttribute="trailing" id="juy-IG-Xos"/>
                         </constraints>
                     </view>
                     <connections>
