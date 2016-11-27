@@ -10,6 +10,9 @@ import Cocoa
 
 class QuestionViewController: NSViewController {
 
+    // Stack view as a button container view
+    let stackView = NSStackView()
+    
     @IBOutlet weak var timeTextField: NSTextField!
     @IBOutlet weak var answerTextField: NSTextField!
     @IBOutlet weak var scoreTextField: NSTextField!
@@ -18,11 +21,27 @@ class QuestionViewController: NSViewController {
     let successJis = ["👍","👏","🤘","👌"]
     let failJis = ["👎","😡","👿","💩"]
     
+    // Variables
+    var timer: Timer?
+    
     var question: Question?
+    
     var score: Int = 0 {
         didSet {
             let string = "\(score)"
             scoreTextField.stringValue = string.numberEmoji
+        }
+    }
+    
+    var time: Int = 0 {
+        didSet {
+            let string: String
+            if time < 0 {
+                string = "0"
+            } else {
+                string = "\(time)"
+            }
+            timeTextField.stringValue = "🕘" + string.numberEmoji
         }
     }
     
@@ -38,11 +57,31 @@ class QuestionViewController: NSViewController {
     }
     
     private func configureViews() {
-
+        self.title = "🕵️ FindJi"
+        preferredContentSize = NSSize(width: 440, height: 440)
     }
     
     func startGame() {
         score = 0
+        time = 60
+        
+        timer = Timer.scheduledTimer(timeInterval: 1,
+                                     target: self,
+                                     selector: #selector(QuestionViewController.updateTime),
+                                     userInfo: nil,
+                                     repeats: true)
+    }
+    
+    func stopGame() {
+        timer?.invalidate()
+    }
+    
+    func updateTime() {
+        time -= 1
+        
+        if time <= 0 {
+            stopGame()
+        }
     }
     
     func createQuestion() {
@@ -51,8 +90,16 @@ class QuestionViewController: NSViewController {
             question = Question.random()
             
             answerTextField.stringValue = question?.answer ?? ""
-        
-            touchBar = makeTouchBar()
+            
+            stackView.subviews.forEach({ [weak self] (view) in
+                self?.stackView.removeArrangedSubview(view)
+                view.removeFromSuperview()
+            })
+            
+            question?.choices.forEach({ [weak self] (choice) in
+                let button = NSButton(title: choice, target: self, action: #selector(QuestionViewController.answer))
+                self?.stackView.addArrangedSubview(button)
+            })
             
         } else {
             // Fallback on earlier versions
@@ -90,24 +137,11 @@ extension QuestionViewController: NSTouchBarDelegate {
         case NSTouchBarItemIdentifier("findji"):
             
             let viewItem = NSCustomTouchBarItem(identifier: identifier)
-            viewItem.view = createButtonsView()
+            viewItem.view = stackView
             return viewItem
             
         default:
             return nil
         }
-    }
-    
-    private func createButtonsView() -> NSStackView {
-        
-        var buttons = [NSButton]()
-        question?.choices.forEach({ (choice) in
-            let button = NSButton(title: choice, target: self, action: #selector(QuestionViewController.answer))
-            buttons.append(button)
-        })
-        
-        let stackView = NSStackView(views: buttons)
-        
-        return stackView
     }
 }

@@ -75,8 +75,10 @@ enum QuestionType: Int {
             array = Array(self.characters.characters.map{ String($0) })
         }
         let shuffled = array.shuffled
-        return Array(shuffled.prefix(8))
+        return Array(shuffled.prefix(QuestionType.choicesCount))
     }
+    
+    static let choicesCount = 8
 }
 
 struct Question {
