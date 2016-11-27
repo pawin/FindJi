@@ -39,7 +39,8 @@ class QuestionViewController: NSViewController {
             if time < 0 {
                 string = "0"
             } else {
-                string = "\(time)"
+                let timeString = "\(time)"
+                string = timeString.characters.count == 1 ? "0\(timeString)" : timeString
             }
             timeTextField.stringValue = "🕘" + string.numberEmoji
         }
@@ -63,7 +64,7 @@ class QuestionViewController: NSViewController {
     
     func startGame() {
         score = 0
-        time = 60
+        time = 10
         
         timer?.invalidate()
         timer = Timer.scheduledTimer(timeInterval: 1,
